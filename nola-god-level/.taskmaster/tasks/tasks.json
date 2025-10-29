@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "title": "Backend: Inicializar repositório Django",
-    "description": "Backend: Inicializar repositório Django",
-    "status": "pending",
+    "title": "Backend: Inicializar projeto Django",
+    "description": "Backend: Inicializar projeto Django",
+    "status": "done",
     "priority": "high",
     "dependencies": []
   },
@@ -11,7 +11,7 @@
     "id": "2",
     "title": "Backend: Configurar ambiente virtual Python",
     "description": "Backend: Configurar ambiente virtual Python",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": ["1"]
   },
