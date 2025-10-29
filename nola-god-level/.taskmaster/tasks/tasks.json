@@ -1,0 +1,434 @@
+[
+  {
+    "id": "1",
+    "title": "Backend: Inicializar repositório Django",
+    "description": "Backend: Inicializar repositório Django",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": []
+  },
+  {
+    "id": "2",
+    "title": "Backend: Configurar ambiente virtual Python",
+    "description": "Backend: Configurar ambiente virtual Python",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["1"]
+  },
+  {
+    "id": "3",
+    "title": "Backend: Instalar dependências iniciais (Django, psycopg2, djangorestframework)",
+    "description": "Backend: Instalar dependências iniciais (Django, psycopg2, djangorestframework)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["2"]
+  },
+  {
+    "id": "4",
+    "title": "Backend: Criar estrutura básica de app (core/analytics)",
+    "description": "Backend: Criar estrutura básica de app (core/analytics)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["3"]
+  },
+  {
+    "id": "5",
+    "title": "Backend: Configurar conexão PostgreSQL",
+    "description": "Backend: Configurar conexão PostgreSQL",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["4"]
+  },
+  {
+    "id": "6",
+    "title": "Frontend: Inicializar projeto React (Create React App)",
+    "description": "Frontend: Inicializar projeto React (Create React App)",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": []
+  },
+  {
+    "id": "7",
+    "title": "Frontend: Configurar estrutura inicial de pastas/components",
+    "description": "Frontend: Configurar estrutura inicial de pastas/components",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["6"]
+  },
+  {
+    "id": "8",
+    "title": "Backend: Setup Docker para ambiente de desenvolvimento",
+    "description": "Backend: Setup Docker para ambiente de desenvolvimento",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["5"]
+  },
+  {
+    "id": "9",
+    "title": "Frontend: Setup Docker/compose se aplicável",
+    "description": "Frontend: Setup Docker/compose se aplicável",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["7"]
+  },
+  {
+    "id": "10",
+    "title": "Backend: Criar models de teste do banco (1 tabela)",
+    "description": "Backend: Criar models de teste do banco (1 tabela)",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["5"]
+  },
+  {
+    "id": "11",
+    "title": "Backend: Validar conexão com banco local",
+    "description": "Backend: Validar conexão com banco local",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["10"]
+  },
+  {
+    "id": "12",
+    "title": "Backend: Criar endpoint de teste",
+    "description": "Backend: Criar endpoint de teste",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["11"]
+  },
+  {
+    "id": "13",
+    "title": "Frontend: Testar conexão com backend/API",
+    "description": "Frontend: Testar conexão com backend/API",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["12", "7"]
+  },
+  {
+    "id": "14",
+    "title": "Backlog Refinement: Validar escopo com stakeholders",
+    "description": "Backlog Refinement: Validar escopo com stakeholders",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": []
+  },
+  {
+    "id": "15",
+    "title": "Backend: Mapear schema principal (sales, stores, products)",
+    "description": "Backend: Mapear schema principal (sales, stores, products)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["11"]
+  },
+  {
+    "id": "16",
+    "title": "Backend: Criar model completo conforme schema",
+    "description": "Backend: Criar model completo conforme schema",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["15"]
+  },
+  {
+    "id": "17",
+    "title": "Backend: Implementar seed inicial para testar queries",
+    "description": "Backend: Implementar seed inicial para testar queries",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["16"]
+  },
+  {
+    "id": "18",
+    "title": "Backend: Criar endpoint /api/analytics/query (aceitar filtros básicos)",
+    "description": "Backend: Criar endpoint /api/analytics/query (aceitar filtros básicos)",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["17"]
+  },
+  {
+    "id": "19",
+    "title": "Backend: Traduzir definição JSON para query SQL",
+    "description": "Backend: Traduzir definição JSON para query SQL",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["18"]
+  },
+  {
+    "id": "20",
+    "title": "Backend: Implementar lógica de query agregada (ex: SUM(total_amount) por store)",
+    "description": "Backend: Implementar lógica de query agregada (ex: SUM(total_amount) por store)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["19"]
+  },
+  {
+    "id": "21",
+    "title": "Backend: Testar queries complexas com volume realista (~500k)",
+    "description": "Backend: Testar queries complexas com volume realista (~500k)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["20"]
+  },
+  {
+    "id": "22",
+    "title": "Backend: Medir tempo resposta, logar KPIs",
+    "description": "Backend: Medir tempo resposta, logar KPIs",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["21"]
+  },
+  {
+    "id": "23",
+    "title": "Backend: Implementar logs de performance",
+    "description": "Backend: Implementar logs de performance",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["22"]
+  },
+  {
+    "id": "24",
+    "title": "Backend: Criar testes unitários para queries",
+    "description": "Backend: Criar testes unitários para queries",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["20"]
+  },
+  {
+    "id": "25",
+    "title": "Backend: Documentar endpoints iniciais",
+    "description": "Backend: Documentar endpoints iniciais",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["18"]
+  },
+  {
+    "id": "26",
+    "title": "Backend: Expandir endpoint para múltiplos filtros (por período, canal, produto)",
+    "description": "Backend: Expandir endpoint para múltiplos filtros (por período, canal, produto)",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["18"]
+  },
+  {
+    "id": "27",
+    "title": "Backend: Implementar paginação de resultados",
+    "description": "Backend: Implementar paginação de resultados",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["26"]
+  },
+  {
+    "id": "28",
+    "title": "Backend: Otimizar queries (análises EXPLAIN, índices)",
+    "description": "Backend: Otimizar queries (análises EXPLAIN, índices)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["21"]
+  },
+  {
+    "id": "29",
+    "title": "Backend: Implementar cache simples para queries frequentes",
+    "description": "Backend: Implementar cache simples para queries frequentes",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["28"]
+  },
+  {
+    "id": "30",
+    "title": "Backend: Criar endpoint para retornar metadados para frontend (campos disponíveis)",
+    "description": "Backend: Criar endpoint para retornar metadados para frontend (campos disponíveis)",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["26"]
+  },
+  {
+    "id": "31",
+    "title": "Frontend: Criar componentes de filtro visual (DatePicker, Select Dinâmico)",
+    "description": "Frontend: Criar componentes de filtro visual (DatePicker, Select Dinâmico)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["30"]
+  },
+  {
+    "id": "32",
+    "title": "Frontend: Integrar chamada ao endpoint /api/analytics/query",
+    "description": "Frontend: Integrar chamada ao endpoint /api/analytics/query",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["31", "26"]
+  },
+  {
+    "id": "33",
+    "title": "Frontend: Implementar visualização de gráfico básico (barra)",
+    "description": "Frontend: Implementar visualização de gráfico básico (barra)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["32"]
+  },
+  {
+    "id": "34",
+    "title": "Frontend: Implementar visualização de tabela",
+    "description": "Frontend: Implementar visualização de tabela",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["32"]
+  },
+  {
+    "id": "35",
+    "title": "Frontend: Testar múltiplas visualizações simultâneas",
+    "description": "Frontend: Testar múltiplas visualizações simultâneas",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["33", "34"]
+  },
+  {
+    "id": "36",
+    "title": "Frontend: Criar loader/spinner de estado",
+    "description": "Frontend: Criar loader/spinner de estado",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["32"]
+  },
+  {
+    "id": "37",
+    "title": "Backend: Modelar Dashboard e Chart como entidades",
+    "description": "Backend: Modelar Dashboard e Chart como entidades",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["16"]
+  },
+  {
+    "id": "38",
+    "title": "Backend: Criar endpoints CRUD para Dashboard e Chart",
+    "description": "Backend: Criar endpoints CRUD para Dashboard e Chart",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["37"]
+  },
+  {
+    "id": "39",
+    "title": "Backend: Implementar autenticação mock (User hardcoded/token estático)",
+    "description": "Backend: Implementar autenticação mock (User hardcoded/token estático)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["38"]
+  },
+  {
+    "id": "40",
+    "title": "Backend: Validar permissão de acesso para CRUD",
+    "description": "Backend: Validar permissão de acesso para CRUD",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["39"]
+  },
+  {
+    "id": "41",
+    "title": "Frontend: Criar tela \"Salvar Dashboard\" e interface para edição de dashboards",
+    "description": "Frontend: Criar tela \"Salvar Dashboard\" e interface para edição de dashboards",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["38", "35"]
+  },
+  {
+    "id": "42",
+    "title": "Frontend: Implementar modal para salvar/renomear re-visualizações",
+    "description": "Frontend: Implementar modal para salvar/renomear re-visualizações",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["41"]
+  },
+  {
+    "id": "43",
+    "title": "Frontend: Renderizar múltiplos gráficos em um dashboard",
+    "description": "Frontend: Renderizar múltiplos gráficos em um dashboard",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["42"]
+  },
+  {
+    "id": "44",
+    "title": "Frontend: Implementar feedback visual de sucesso/erro",
+    "description": "Frontend: Implementar feedback visual de sucesso/erro",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["43"]
+  },
+  {
+    "id": "45",
+    "title": "Backend: Testes automatizados das permissões e endpoints",
+    "description": "Backend: Testes automatizados das permissões e endpoints",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["40"]
+  },
+  {
+    "id": "46",
+    "title": "Backend: Revisar todos os testes automatizados",
+    "description": "Backend: Revisar todos os testes automatizados",
+    "status": "pending",
+    "priority": "low",
+    "dependencies": ["45", "24"]
+  },
+  {
+    "id": "47",
+    "title": "Backend: Revisão de queries (performance, cache, índices)",
+    "description": "Backend: Revisão de queries (performance, cache, índices)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["29"]
+  },
+  {
+    "id": "48",
+    "title": "Backend: Revisar documentação dos endpoints",
+    "description": "Backend: Revisar documentação dos endpoints",
+    "status": "pending",
+    "priority": "high",
+    "dependencies": ["25"]
+  },
+  {
+    "id": "49",
+    "title": "Frontend: Revisar responsividade (diversos tamanhos de tela)",
+    "description": "Frontend: Revisar responsividade (diversos tamanhos de tela)",
+    "status": "pending",
+    "priority": "low",
+    "dependencies": ["44"]
+  },
+  {
+    "id": "50",
+    "title": "Frontend: Testar experiência de Maria (usabilidade, fluxos principais)",
+    "description": "Frontend: Testar experiência de Maria (usabilidade, fluxos principais)",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["49"]
+  },
+  {
+    "id": "51",
+    "title": "Frontend: Implementar tema dark final",
+    "description": "Frontend: Implementar tema dark final",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["50"]
+  },
+  {
+    "id": "52",
+    "title": "Backend: Criar scripts de setup e mocks para demo",
+    "description": "Backend: Criar scripts de setup e mocks para demo",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["47"]
+  },
+  {
+    "id": "53",
+    "title": "Frontend: Gravar vídeo demo funcional",
+    "description": "Frontend: Gravar vídeo demo funcional",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["51"]
+  },
+  {
+    "id": "54",
+    "title": "Backend: Preparar README final de entrega",
+    "description": "Backend: Preparar README final de entrega",
+    "status": "pending",
+    "priority": "medium",
+    "dependencies": ["53", "48"]
+  }
+]
