@@ -99,7 +99,7 @@
     "id": "13",
     "title": "Frontend: Testar conexão com backend/API",
     "description": "Frontend: Testar conexão com backend/API",
-    "status": "pending",
+    "status": "done",
     "priority": "medium",
     "dependencies": ["12", "7"]
   },
@@ -107,7 +107,7 @@
     "id": "14",
     "title": "Backlog Refinement: Validar escopo com stakeholders",
     "description": "Backlog Refinement: Validar escopo com stakeholders",
-    "status": "pending",
+    "status": "done",
     "priority": "medium",
     "dependencies": []
   },
