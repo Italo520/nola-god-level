@@ -19,7 +19,7 @@
     "id": "3",
     "title": "Backend: Instalar dependências iniciais (Django, psycopg2, djangorestframework)",
     "description": "Backend: Instalar dependências iniciais (Django, psycopg2, djangorestframework)",
-    "status": "pending",
+    "status": "done",
     "priority": "medium",
     "dependencies": ["2"]
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "title": "Frontend: Configurar estrutura inicial de pastas/components",
     "description": "Frontend: Configurar estrutura inicial de pastas/components",
-    "status": "in-progress",
+    "status": "done",
     "priority": "high",
     "dependencies": ["6"]
   },
