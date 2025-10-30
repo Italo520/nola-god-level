@@ -115,7 +115,7 @@
     "id": "15",
     "title": "Backend: Mapear schema principal (sales, stores, products)",
     "description": "Backend: Mapear schema principal (sales, stores, products)",
-    "status": "pending",
+    "status": "done",
     "priority": "medium",
     "dependencies": ["11"]
   },
