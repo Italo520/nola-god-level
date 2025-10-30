@@ -59,7 +59,7 @@
     "id": "8",
     "title": "Backend: Setup Docker para ambiente de desenvolvimento",
     "description": "Backend: Setup Docker para ambiente de desenvolvimento",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": ["5"]
   },
