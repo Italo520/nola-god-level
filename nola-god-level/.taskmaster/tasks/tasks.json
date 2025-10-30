@@ -43,7 +43,7 @@
     "id": "6",
     "title": "Frontend: Inicializar projeto React (Create React App)",
     "description": "Frontend: Inicializar projeto React (Create React App)",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": []
   },
@@ -51,7 +51,7 @@
     "id": "7",
     "title": "Frontend: Configurar estrutura inicial de pastas/components",
     "description": "Frontend: Configurar estrutura inicial de pastas/components",
-    "status": "pending",
+    "status": "in-progress",
     "priority": "high",
     "dependencies": ["6"]
   },
