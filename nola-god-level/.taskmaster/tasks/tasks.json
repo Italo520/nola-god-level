@@ -75,7 +75,7 @@
     "id": "10",
     "title": "Backend: Criar models de teste do banco (1 tabela)",
     "description": "Backend: Criar models de teste do banco (1 tabela)",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": ["5"]
   },
