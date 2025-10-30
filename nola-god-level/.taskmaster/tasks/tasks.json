@@ -91,7 +91,7 @@
     "id": "12",
     "title": "Backend: Criar endpoint de teste",
     "description": "Backend: Criar endpoint de teste",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": ["11"]
   },
