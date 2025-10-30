@@ -35,7 +35,7 @@
     "id": "5",
     "title": "Backend: Configurar conexão PostgreSQL",
     "description": "Backend: Configurar conexão PostgreSQL",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": ["4"]
   },
