@@ -67,7 +67,7 @@
     "id": "9",
     "title": "Frontend: Setup Docker/compose se aplicável",
     "description": "Frontend: Setup Docker/compose se aplicável",
-    "status": "pending",
+    "status": "done",
     "priority": "high",
     "dependencies": ["7"]
   },
